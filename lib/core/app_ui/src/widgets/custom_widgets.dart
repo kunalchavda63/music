@@ -191,7 +191,7 @@ class CustomWidgets {
     return CustomText(
       data: data,
       style: style,
-      overflow: overflow,
+      overflow: overflow??TextOverflow.ellipsis,
       strutStyle: strutStyle,
       textAlign: textAlign,
       textDecoration: textDecoration,

@@ -37,5 +37,12 @@ class AppColors {
   static const Color hex3b0a = Color(0XFF3B0A0A);
   static const Color hex8a2b = Color(0XFF8A2B2B);
   static const Color hexF2c9 = Color(0XFFF2C9C9);
+  static const Color background = Color(0xFF121212);
+  static const Color card = Color(0xFF1F1B24);
+  static const Color border = Color(0xFF424242);
+  static const Color textPrimary = Colors.white;
+  static const Color textSecondary = Color(0xFFB3B3B3);
+  static const Color accent = Color(0xFFFF6D00); // or use #00C853
+
 
 }

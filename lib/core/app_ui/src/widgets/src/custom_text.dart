@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomText extends StatelessWidget {
   final String data;
   final TextStyle? style;
-  final TextOverflow? overflow;
+  final TextOverflow overflow;
   final StrutStyle? strutStyle;
   final TextAlign? textAlign;
   final TextDecoration? textDecoration;
@@ -23,7 +23,7 @@ class CustomText extends StatelessWidget {
     super.key,
     required this.data,
     this.style,
-    required this.overflow,
+    this.overflow = TextOverflow.ellipsis, // ✅ default ellipsis
     this.strutStyle,
     this.textAlign,
     this.textDecoration,
@@ -31,7 +31,7 @@ class CustomText extends StatelessWidget {
     this.softWrap,
     this.textScaleFactor,
     this.textScaler,
-    this.maxLines,
+    this.maxLines = 1, // ✅ default 1 line
     this.semanticsLabel,
     this.semanticsIdentifier,
     this.textWidthBasis,
@@ -46,8 +46,8 @@ class CustomText extends StatelessWidget {
       data,
       style: style,
       overflow: overflow,
-      strutStyle: strutStyle,
       maxLines: maxLines,
+      strutStyle: strutStyle,
       textAlign: textAlign,
       textDirection: textDirection,
       locale: locale,

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:music/core/app_ui/app_ui.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Future<bool> takeLocationPermission() async {
@@ -133,3 +134,9 @@ void setStatusBarLightStyle() {
 //       : "${dateTime.day.toString().padLeft(2, '0')}/${dateTime.month.toString().padLeft(2, '0')}/${dateTime.year}";
 // }
 
+Future<void> requestStoragePermission() async{
+  var status = await Permission.audio.status;
+  if(!status.isGranted){
+    await Permission.audio.request();
+  }
+}
