@@ -8,7 +8,7 @@ final getIt = GetIt.instance;
 Future<void> setupServiceLocator() async {
   // Make sure Flutter engine is initialized before using any services
   WidgetsFlutterBinding.ensureInitialized();
-  requestStoragePermission();
+  await requestStoragePermission();
 
   // Register router or other services
   getIt.registerLazySingleton<AppRouter>(() => AppRouter());

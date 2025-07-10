@@ -14,25 +14,25 @@ class AppColors {
   static const Color hex3E3f = Color(0XFF3E3F3F);
 
   // White Smoke and wine
-  static const Color hexEeeb = Color(0XFFEEEBD9);
-  static const Color hex2824 = Color(0XFF282427);
+  static const Color whiteSmoke = Color(0XFFEEEBD9);
+  static const Color redWine = Color(0XFF282427);
 
   // Persian Pink and Lavendar Pink
-  static const Color hexF792 = Color(0XFFF792CC);
-  static const Color hexFfda = Color(0XFFFFDAFC);
+  static const Color persianPink = Color(0XFFF792CC);
+  static const Color lavendarPink = Color(0XFFFFDAFC);
 
   // Robin Egg Blue and Black Olive
-  static const Color hex4fc9 = Color(0XFF4FC9CC);
-  static const Color hex2e38 = Color(0XFF2E3830);
+  static const Color eggBlue = Color(0XFF4FC9CC);
+  static const Color blackOlive = Color(0XFF2E3830);
 
   // Double Teal and Lemon Yellow
-  static const Color hex2744 = Color(0XFF27443F);
-  static const Color hexF2fd = Color(0XFFF2FD7D);
+  static const Color doubleTeal = Color(0XFF27443F);
+  static const Color lemonYellow = Color(0XFFF2FD7D);
 
   // Platinum and photo Blue
 
-  static const Color hexE0f2 = Color(0XFFE0F2F2);
-  static const Color hex6dc7 = Color(0XFF6DC7CF);
+  static const Color platinum = Color(0XFFE0F2F2);
+  static const Color photoBlue = Color(0XFF6DC7CF);
 
   static const Color hex3b0a = Color(0XFF3B0A0A);
   static const Color hex8a2b = Color(0XFF8A2B2B);

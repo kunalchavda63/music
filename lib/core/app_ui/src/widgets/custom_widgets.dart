@@ -234,11 +234,34 @@ class CustomWidgets {
     List<BottomNavModel>? bottomNavList,
     int? currentIndex,
     ValueChanged<int>? onTap,
+    Color? bgColor,
+    double? iconSize,
+    double? unSelectedFontSize,
+    bool? showSelectedLabels,
+    TextStyle? unSelectedLabelStyle,
+    TextStyle? selectedLabelStyle,
+    Color? selectedItemColor,
+    Color? unselectedItemColor,
+    double? selectedFontSize,
+    bool? showUnSelectedLabels,
+
   }) {
     return CustomBottomNav(
       bottomNavList: bottomNavList ?? [],
       currentIndex: currentIndex ?? 0,
       onTap: onTap,
+      bgColor: bgColor,
+      iconSize: iconSize,
+      unSelectedFontSize: unSelectedFontSize,
+      showSelectedLabels: showSelectedLabels,
+      unSelectedLabelStyle: unSelectedLabelStyle,
+      selectedLabelStyle: selectedLabelStyle,
+      selectedItemColor: selectedItemColor,
+      unSelectedItemColor: unselectedItemColor,
+      selectedFontSize: selectedFontSize,
+      showUnSelectedLabels: showUnSelectedLabels,
+
+
     );
   }
 

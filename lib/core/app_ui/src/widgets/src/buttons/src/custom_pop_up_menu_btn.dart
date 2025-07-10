@@ -27,13 +27,13 @@ class CustomPopupMenuButton extends StatelessWidget {
       popUpAnimationStyle:animationStyle?? AnimationStyle(curve: Curves.ease,duration: Duration(milliseconds: 800)),
       onSelected: onSelected,
       position: popupMenuPosition??PopupMenuPosition.over,
-      color:boxColor?? AppColors.hex2824,
+      color:boxColor?? AppColors.redWine,
       offset:offset?? Offset(-20,40),
       itemBuilder: (context) => items
           .map((item) => PopupMenuItem<String>(
 
         value: item,
-        child: eachChild??CustomWidgets.customText(data: item,style: BaseStyle.s17w400.c(AppColors.hexEeeb)),
+        child: eachChild??CustomWidgets.customText(data: item,style: BaseStyle.s17w400.c(AppColors.whiteSmoke)),
       ))
           .toList(),
       icon: icon,

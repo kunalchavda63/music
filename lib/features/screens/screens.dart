@@ -10,7 +10,10 @@ class Screens extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Widget> screens = [Home(),Playlists()];
+    final List<Widget> screens = [
+      Home(),
+      Playlists(),
+    ];
     return Scaffold(
       body: BlocBuilder<CurrentIndexCubit,int>(
           builder: (context,state){
@@ -20,6 +23,11 @@ class Screens extends StatelessWidget {
       bottomNavigationBar: BlocBuilder<CurrentIndexCubit,int>(
         builder: (context,state){
           return CustomWidgets.customBottomNavigationBar(
+            bgColor: AppColors.card,
+              selectedItemColor: AppColors.eggBlue,
+              unselectedItemColor: AppColors.lavendarPink,
+              showSelectedLabels: true,
+              iconSize: 20,
               currentIndex: state,
               bottomNavList: bottomList,
               onTap: (val){
