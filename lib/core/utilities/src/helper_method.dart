@@ -1,8 +1,11 @@
 import 'dart:developer';
+import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:music/core/app_ui/app_ui.dart';
+import 'package:music/core/utilities/src/extensions/logger/logger.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -135,8 +138,17 @@ void setStatusBarLightStyle() {
 // }
 
 Future<void> requestStoragePermission() async{
-  var status = await Permission.audio.status;
+  var status = await Permission.storage.status;
   if(!status.isGranted){
-    await Permission.audio.request();
+    await Permission.storage.request();
   }
 }
+// Future<void> saveNetworkImage(String url) async{
+//   var response = await Dio().get(url,options: Options(responseType: ResponseType.bytes));
+//   final result = await ImageGallerySaver.saveImage(Uint8List.fromList(response.data),quality: 60,name: url.trim());
+//   logger.e(result);
+//   logger.d(result);
+//
+// }
+
+

@@ -1,8 +1,8 @@
 import 'package:music/core/app_ui/app_ui.dart';
 import 'package:music/core/services/navigation/router.dart';
 import 'package:music/core/services/repositories/service_locator.dart';
-import 'package:music/features/animation/circle_rotate_animation.dart';
 import 'package:music/features/animation/simple_animation.dart';
+import 'package:music/features/animation/triangle_border_image.dart';
 
 class Playlists extends StatefulWidget {
   const Playlists({super.key});
@@ -23,7 +23,8 @@ class _PlaylistsState extends State<Playlists> {
     final g = getIt<AppRouter>();
     final List<AnimationScreeModel> animationScreenList = [
       AnimationScreeModel(icon: Icons.animation, label:'Simple Animation',onTap: ()=>g.push(SimpleAnimation())),
-      AnimationScreeModel(icon: Icons.animation_sharp, label:'Circle Rotate Animation',onTap: ()=>g.push(CircleRotateAnimation())),
+      AnimationScreeModel(icon: Icons.animation, label:'Rectangle Border Animation',onTap: ()=>g.push(TriangleBorderImage())),
+
     ];
 
     return Scaffold(

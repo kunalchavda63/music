@@ -31,6 +31,7 @@ class CustomImageView extends StatelessWidget {
           height: height,
           width: width,
           fit: fit,
+
           placeholderFadeInDuration: const Duration(milliseconds: 500),
           progressIndicatorBuilder: (context, url, downloadProgress) {
             final double progressValue = downloadProgress.progress ?? 0.0;
@@ -54,6 +55,7 @@ class CustomImageView extends StatelessWidget {
                 height: height,
                 width: width,
                 fit: fit,
+
               ),
             );
           },
